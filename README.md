@@ -20,7 +20,7 @@ Configure the project repository:
         <repositories>
             <repository>
                 <id>klausboeing-mvn-repo</id>
-                <url>https://raw.github.com/klausboeing/jackson-extension/mvn-repo//<url>
+                <url>https://raw.github.com/klausboeing/jackson-extension/mvn-repo/<url>
                 <snapshots>
                     <enabled>true</enabled>
                     <updatePolicy>always</updatePolicy>
