@@ -9,14 +9,11 @@ Module for Jackson adds utilities for serialization and deserialization.
 - Maven
 - Java 8
 
-```
-Give examples
-```
-
 ### Installing
 
 Configure the project repository:
 
+```xml
         <repositories>
             <repository>
                 <id>klausboeing-mvn-repo</id>
@@ -27,18 +24,18 @@ Configure the project repository:
                 </snapshots>
             </repository>
         </repositories>
-
+```
 Add the following dependence on project:
-
+```xml
         <dependency>
           <groupId>com.klausboeing</groupId>
           <artifactId>jackson-extension</artifactId>
           <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
+```
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/klausboeing/jackson-extension/tags). 
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
