@@ -5,6 +5,6 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 
 public interface PropertyTransformer<T> {
 
-    T transform(JsonParser p, DeserializationContext ctxt, Class type);
+    T transform(JsonParser p, DeserializationContext ctxt, Class<T> type);
 
 }

@@ -7,8 +7,8 @@ import java.lang.annotation.Target;
 
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = {ElementType.FIELD})
-public @interface JsonPropertyTransformer {
+public @interface JsonDeserializePropertyTransformer {
 
-    Class<? extends PropertyTransformerProvider> provider();
+    Class<? extends PropertyTransformerProvider> value();
 
 }

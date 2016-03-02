@@ -10,4 +10,6 @@ import java.lang.annotation.Target;
 public @interface JsonPropertyGroup {
 
     String[] value() default {"default"};
+
+    JsonUsePropertyGroup usePropertyGroup() default @JsonUsePropertyGroup("EMPTY_GROUP");
 }
