@@ -4,8 +4,8 @@
   <artifactId>jackson-extension</artifactId>
   <versioning>
     <versions>
-      <version>0.0.1-SNAPSHOT</version>
+      <version>0.0.2-SNAPSHOT</version>
     </versions>
-    <lastUpdated>20160229230759</lastUpdated>
+    <lastUpdated>20160303003657</lastUpdated>
   </versioning>
 </metadata>

@@ -3,13 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.klausboeing</groupId>
     <artifactId>jackson-extension</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <properties>
         <github.global.server>github</github.global.server>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <version-com.fasterxml.jackson.core>2.7.1</version-com.fasterxml.jackson.core>
     </properties>
 
     <distributionManagement>
@@ -34,18 +35,17 @@
                 <artifactId>site-maven-plugin</artifactId>
                 <version>0.11</version>
                 <configuration>
-                    <message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
-                    <noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
-                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory> <!-- matches distribution management repository url above -->
-                    <branch>refs/heads/mvn-repo</branch>                       <!-- remote branch name -->
+                    <message>Maven artifacts for ${project.version}</message> 
+                    <noJekyll>true</noJekyll>
+                    <outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
+                    <branch>refs/heads/mvn-repo</branch>
                     <includes>
                         <include>**/*</include>
                     </includes>
-                    <repositoryName>jackson-extension</repositoryName>      <!-- github repo name -->
-                    <repositoryOwner>klausboeing</repositoryOwner>    <!-- github username  -->
+                    <repositoryName>jackson-extension</repositoryName>
+                    <repositoryOwner>klausboeing</repositoryOwner>
                 </configuration>
                 <executions>
-                    <!-- run site-maven-plugin's 'site' target as part of the build's normal 'deploy' phase -->
                     <execution>
                         <goals>
                             <goal>site</goal>
@@ -61,17 +61,17 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>2.7.1</version>
+            <version>${version-com.fasterxml.jackson.core}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.7.1</version>
+            <version>${version-com.fasterxml.jackson.core}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
-            <version>2.7.1</version>
+            <version>${version-com.fasterxml.jackson.core}</version>
         </dependency>
     </dependencies>
     <name>jackson-extension</name>
