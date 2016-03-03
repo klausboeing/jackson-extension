@@ -1,4 +1,5 @@
 # Jackson Extension
+[![Build Status](https://travis-ci.org/klausboeing/jackson-extension.svg?branch=master)](https://travis-ci.org/klausboeing/jackson-extension)
 
 Module for Jackson adds utilities for serialization and deserialization.
 
