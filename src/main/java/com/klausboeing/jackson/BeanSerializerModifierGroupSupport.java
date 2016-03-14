@@ -37,6 +37,11 @@ final class BeanSerializerModifierGroupSupport extends BeanSerializerModifier {
             if (!gen.getOutputContext().getParent().inRoot()) {
                 JsonStreamContext parent = getParentObject(gen.getOutputContext());
 
+                if (parent == null) {
+                    super.serializeAsField(bean, gen, prov);
+                    return;
+                }
+
                 String parentName = parent.getCurrentName();
                 Object parentValue = parent.getCurrentValue();
 
@@ -92,7 +97,7 @@ final class BeanSerializerModifierGroupSupport extends BeanSerializerModifier {
 
         private JsonStreamContext getParentObject(JsonStreamContext context) {
             JsonStreamContext parent = context.getParent();
-            while (!parent.inObject()) {
+            while (parent != null &&!parent.inObject()) {
                 parent = parent.getParent();
             }
 
