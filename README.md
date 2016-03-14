@@ -145,7 +145,7 @@ Add the following dependence on project:
         <dependency>
           <groupId>com.klausboeing</groupId>
           <artifactId>jackson-extension</artifactId>
-          <version>0.0.2-SNAPSHOT</version>
+          <version>0.0.3-SNAPSHOT</version>
         </dependency>
 ```
 
