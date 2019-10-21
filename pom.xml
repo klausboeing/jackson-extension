@@ -10,7 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <version-com.fasterxml.jackson.core>2.7.1</version-com.fasterxml.jackson.core>
+        <version-com.fasterxml.jackson.core>2.10.0</version-com.fasterxml.jackson.core>
     </properties>
 
     <distributionManagement>
